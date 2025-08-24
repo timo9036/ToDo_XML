@@ -23,7 +23,9 @@ import com.example.todo_xml.fragments.list.adapter.ListAdapter
 import com.example.todo_xml.utils.hideKeyboard
 import com.example.todo_xml.utils.observeOnce
 import com.google.android.material.snackbar.Snackbar
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class ListFragment : Fragment(), SearchView.OnQueryTextListener {
 
     private val mToDoViewModel: ToDoViewModel by viewModels()

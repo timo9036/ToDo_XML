@@ -14,7 +14,9 @@ import com.example.todo_xml.data.models.ToDoData
 import com.example.todo_xml.data.viewmodel.ToDoViewModel
 import com.example.todo_xml.databinding.FragmentAddBinding
 import com.example.todo_xml.fragments.SharedViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class AddFragment : Fragment() {
 
     private val mToDoViewModel: ToDoViewModel by viewModels()

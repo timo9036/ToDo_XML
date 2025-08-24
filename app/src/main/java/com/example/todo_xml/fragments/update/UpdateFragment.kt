@@ -16,7 +16,9 @@ import com.example.todo_xml.data.models.ToDoData
 import com.example.todo_xml.data.viewmodel.ToDoViewModel
 import com.example.todo_xml.databinding.FragmentUpdateBinding
 import com.example.todo_xml.fragments.SharedViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class UpdateFragment : Fragment() {
 
     private val args by navArgs<UpdateFragmentArgs>()

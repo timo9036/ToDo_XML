@@ -10,8 +10,11 @@ import androidx.lifecycle.MutableLiveData
 import com.example.todo_xml.R
 import com.example.todo_xml.data.models.Priority
 import com.example.todo_xml.data.models.ToDoData
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
-class SharedViewModel(application: Application): AndroidViewModel(application) {
+@HiltViewModel
+class SharedViewModel @Inject constructor(application: Application): AndroidViewModel(application) {
 
     /** ============================= List Fragment ============================= */
 
